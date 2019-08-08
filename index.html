@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="veritread/css/normalize.min.css">
+  <link rel="stylesheet" href="veritread/css/main.css?150708">
+
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="veritread/js/vendor/html5shiv.js"><\/script>')</script>
+  <![endif]-->
+</head>
+<body>
+<div style="max-width:980px; margin: 0 auto;"> <!-- 600 -->
+  <div class="vtitem"></div>
+</div>
+
+    <!-- The widget should work with most versions of jQuery -->
+    <script>window.jQuery || document.write('<script src="veritread/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+    <!-- Must include the following script (modify path as needed; querystring forces most recent JS): -->
+    <script src="veritread/js/templates.js?150902"></script>
+    <script src="veritread/js/main.js?150902"></script>
+
+    <script>
+      var veritreadAppSettings = {
+        partnerId: 4,
+        env: 'production',           // if not passed in, will default to 'production'; sets VeriTread URLs to point to
+        assetsDir: 'veritread/',  // if not passed in, will default to 'veritread/'; sets path to dir with widget assets
+        embedCss: 'no',           // options: 'yes', 'no'; if not passed in, will default to 'yes'; sets whether to write CSS link into document when creating app
+        // dimensionsLabel: '' , (this field is unnecessary if you don't provide item dimensions)
+        elementToUse: '.vtitem',
+        templates: new VTTemplates()
+        },
+        veritread = new VTApp(veritreadAppSettings);
+
+      // Create an estimator display and add it to an existing (unique) element on the page
+      veritread.addItemToElement('.vtitem', {
+        make: 'Caterpillar',
+        model: 'D9N',
+        originCountryISO: 'US',
+        originPostal: '33606' // You can specify your pickup location with country + postal code, or country + city, state/province
+      });
+
+      // Estimator item parameters:
+      // - make (string, REQUIRED - widget will show 'List Your Shipment' button if not specified)
+      // - model (string, REQUIRED - widget will show 'List Your Shipment' button if not specified)
+      // - originCountryISO (For auto estimate, must be one of: 'US', 'CA', 'MX'; OPTIONAL)
+      // - originPostal (5-digit code for US; 4 or 5-digit code for Mexico; 6-character code for Canada; OPTIONAL)
+      // - originCity (string, OPTIONAL)
+      // - originState (string, OPTIONAL)
+      // - deliveryCountryISO (Must be one of: 'US', 'CA', 'MX'; OPTIONAL)
+      // - deliveryPostalCode (5-digit code for US; 4 or 5-digit code for Mexico; 6-character code for Canada; OPTIONAL)
+      // - deliveryCity (string, OPTIONAL)
+      // - deliveryState (string, OPTIONAL)
+      // OPTIONAL: Set some or all dimensions for the item being listed by adding 'specs' to the input JSON.
+      //   If specs are set, the widget will display a legend for 'This Item Dimensions' vs. 'Base Model Dimensions'.
+      //   If specs are NOT set, the legend will be hidden, and instead the user will see VeriTread base specs and a disclaimer.
+      //
+      // Sample:
+      //  specs: {
+      //    lengthFt: 21,
+      //    lengthIn: 4,
+      //    widthFt: 8,
+      //    widthIn: 4,
+      //    heightFt: 11,
+      //    heightIn: 7
+      //  }
+
+    </script>
+</body>
+</html>

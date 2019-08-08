@@ -1,0 +1,1237 @@
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.vt-hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.vt-clearfix:before,
+.vt-clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.vt-clearfix:after {
+    clear: both;
+}
+
+.vt-clearfix {
+    *zoom: 1;
+}
+
+.vtbranding.vt-header-1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+.vtbranding.vt-header-1 .vt-logo {
+    margin-top: -8px;
+    vertical-align: middle;
+}
+.vtbranding.vt-header-2 {
+  -webkit-font-smoothing: antialiased;
+    background-color: #444;
+    color: #fff;
+    font-family: "franklin-gothic-urw",sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0 8px 0;
+    text-align: center;
+}
+..vtbranding.vt-header-2 .vt-logo {
+    margin-top: -4px;
+    vertical-align: middle;
+}
+.vtbranding.vt-header-2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.vtfooter.vt-footer-1 {
+  -webkit-font-smoothing: antialiased;
+    background-color: #3a3a3a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 12px;
+    text-align: center;
+}
+.vtfooter.vt-footer-1 .vt-footer-col1 {
+  float: left;
+  text-align: center;
+  width: 66%;
+}
+.vtfooter.vt-footer-1 .vt-footer-col2 {
+  margin-left: 66%;
+  text-align: center;
+}
+.vtfooter.vt-footer-1 a {
+  color: #fff;
+  text-decoration: none;
+}
+.vtfooter.vt-footer-1 a:hover {
+  text-decoration: underline;
+}
+
+.vtfooter.vt-footer-2 {
+  -webkit-font-smoothing: antialiased;
+    background-color: #f3f3f3;
+    border: 1px solid #d6d6d6;
+    color: #3a3a3a;
+    /*margin-top: 12px;*/
+    text-align: center;
+}
+.vtfooter.vt-footer-2 .vtfooter-info .vtfooter-contact,
+.vtfooter.vt-footer-2 .vtfooter-info .vtfooter-text {
+    font-family: "franklin-gothic-urw",sans-serif;
+    font-size: 13px;
+    padding: 12px 0;
+    width: 178px;
+}
+.vtfooter.vt-footer-2 .vtfooter-info .vtfooter-contact {
+    font-size: 22px;
+    font-weight: bold;
+    width: 266px;
+}
+.vtfooter.vt-footer-2 .vtfooter-text .line2 {
+    display:block;
+}
+
+    .vt-footer-2.vt-narrow .vtfooter-info {
+        width: 100%;
+    }
+    .vt-footer-2.vt-narrow .vtfooter-info .vtfooter-text,
+    .vt-footer-2.vt-narrow .vtfooter-info .vtfooter-contact {
+        display: block;
+        float: left;
+        width: 100% !important;
+    }
+    .vt-footer-2.vt-narrow .vtfooter-text .line2 {
+        display: inline;
+    }
+
+
+/*.vtfooter-info .vtfooter-contact,
+.vtfooter-info .vtfooter-text {
+    font-size: 13px;
+    padding: 12px 0;
+    width: 21%;
+}
+.vtfooter-info .vtfooter-contact {
+    font-size: 22px;
+    font-weight: bold;
+    width: 33%;
+}*/
+
+.veritread-estimator
+{
+  /* font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif; */
+  position: relative;
+}
+
+.veritread-estimator .vtplaceholder
+{
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+}
+.veritread-estimator .vtplaceholder a
+{
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+}
+.veritread-estimator .vtplaceholder a
+{
+  display:block;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  color: #333;
+  font-weight: bold;
+  padding: 6px;
+  width: 270px;
+}
+.veritread-estimator .vtplaceholder a:hover
+{
+  background: #e2e2e2; /* Old browsers */
+  background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+}
+.veritread-estimator .vtplaceholder a span
+{
+  float:left;
+  line-height: 1.1em;
+  padding-top:10px;
+  padding-right:6px;
+  padding-left: 6px;
+}
+
+.veritread-estimator .vtestimator
+{
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0;
+}
+
+.vt-specs-and-inputs.vt-col1 {
+  float: left;
+  width: 430px;
+}
+.vt-specs-and-inputs.vt-col1 .vt-errorMsg.vt-alert {
+  display:none;
+}
+.vt-col2 {
+    margin-left: 440px;
+    width: 160px;
+}
+.vt-col2 .vt-about {
+  -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+}
+.vt-col2 .vt-about .vt-header1,
+.vt-col2 .vt-about .vt-header2,
+.vt-col2 .vt-about .vt-blurb {
+    color: #222;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.vt-col2 .vt-about .vt-header1 {
+    border-bottom: 1px solid #b8b8b8;
+    line-height: 18px;
+    margin-top: 12px;
+    padding-bottom: 6px;
+}
+.vt-col2 .vt-about .vt-header2 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+.vt-col2 .vt-about .vt-blurb {
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 6px;
+}
+.vt-col2 .vt-about-footer {
+
+}
+.vt-col2 a.vt-about-footer-link {
+    display: block;
+
+    background-color: #3a3a3a;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 12px;
+    padding: 8px 0 8px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.veritread-main
+{
+  box-sizing: border-box;
+  color: #222;
+  direction: ltr;
+  display: block;
+  /* font-family: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  line-height: 14px;
+  margin: 0;
+  min-height: 1px;
+  position: relative;
+}
+
+.veritread-estimator .vt-estimator {
+    background-color: #efefef;
+    padding: 0 6px;
+}
+
+.veritread-estimator .vt-estimator-results
+{
+}
+.vt-estimator-results-link {
+    text-align: center;
+}
+
+.vt-make-model {
+    background-color: #444;
+    padding: 6px;
+}
+
+.veritread-estimator .vt-specs
+{
+    font-weight: bold;
+    padding-top: 8px;
+    line-height: 25px;
+}
+
+.vt-schematic-and-dimensions {
+    background-color: #f5f5f5;
+    margin-bottom: 12px;
+}
+
+.veritread-estimator .vt-specs section
+{
+  overflow: hidden;
+  text-align: center;
+}
+
+.veritread-estimator .vt-specs .vt-label
+{
+  clear: left;
+  color: #666;
+  float: left;
+  font-size: 12px;
+  line-height: 12px;
+  padding-top: 12px;
+  text-align: right;
+  width: 40.5%;
+  height: 16px;
+}
+.veritread-estimator .vt-specs .vt-label.vt-dim-attwidth,
+.veritread-estimator .vt-specs .vt-label.vt-dim-angattwidth {
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+.vt-label span {
+  float: left;
+  width: 90%;
+}
+
+.veritread-estimator .vt-specs .vt-type
+{
+  float: right;
+  font-size: 12px;
+  padding-top: 4px;
+  text-align: left;
+  width: 56.5%;
+}
+
+.veritread-estimator label
+{
+  line-height: 24px;
+}
+.veritread-estimator .vt-location-ui input[type=text],
+.veritread-estimator .vt-type input[type=text]
+{
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #fff;
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border: 1px solid #B8B8B8;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  box-sizing: border-box;
+  color: #333;
+  display: inline-block;
+  /* font-family:  'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif; */
+  font-size: 12px;
+  line-height: normal;
+  padding: 3px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+.vt-col1 .vt-pickup-location-ui {
+    float: left;
+    width: 36%;
+}
+.vt-col1 .vt-delivery-location-ui {
+    float: left;
+    margin-left: 4px;
+    width: 36%;
+}
+
+.vt-col1 .vt-location-ui {
+    background-color: #444;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    padding: 6px;
+    min-height: 48px;
+}
+/*
+.veritread-estimator .location-label
+{
+  margin-bottom: 6px;
+  text-align: left;
+}
+.veritread-estimator .delivery-location-ui input[type=text],
+.veritread-estimator .pickup-location-ui input[type=text]
+
+{
+  background-color: #e9e9e9;
+  font-weight: bold;
+  width: 100%;
+}
+.veritread-estimator .pickup-location-ui select,
+.veritread-estimator .delivery-location-ui select
+{
+  background-color: #e9e9e9;
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-size: 12px;
+  margin-top: 3px;
+  padding: 2px;
+  width: 100%;
+}
+*/
+
+.vt-pickup-location-ui {
+    float: left;
+    width: 48%;
+}
+.vt-delivery-location-ui {
+    margin-left: 50%;
+}
+.vt-location-label {
+  color: #6d6d6d;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+.vt-location-contents {
+  margin-top: 6px;
+}
+.vt-location-contents,
+.vt-location-lookup {
+  color: #333;
+  font-size: 12px;
+  font-weight: normal !important;
+  margin-bottom: 0;
+}
+.vt-location-lookup {
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 6px;
+}
+
+.veritread-estimator .vt-location-ui {
+    background-color: #f5f5f5;
+    margin-bottom: 12px;
+    padding: 6px;
+}
+
+.veritread-estimator .vt-location-label
+{
+  /* margin-bottom: 6px;
+  text-align: left; */
+}
+.veritread-estimator .vt-delivery-location-ui input[type=text],
+.veritread-estimator .vt-pickup-location-ui input[type=text]
+{
+  background-color: #e9e9e9;
+  font-weight: bold;
+  width: 100%;
+}
+.veritread-estimator .vt-pickup-location-ui select,
+.veritread-estimator .vt-delivery-location-ui select
+{
+  background-color: #e9e9e9;
+  /* font-family:  'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif; */
+  font-size: 12px;
+  margin-top: 3px;
+  padding: 2px;
+  width: 100%;
+}
+
+.veritread-estimator input[type=submit],
+a.vt-button.finish-lookup,
+.vt-get-estimate-button,
+.vt-list-shipment-button
+{
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.498039) 0px 1px 0px 0px inset;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.15s;
+  -webkit-transition-property: background-color;
+  -webkit-transition-timing-function: ease-in-out;
+  background-color: #D7B72C !important;
+  border: 1px solid #a7971c !important;
+  color: #333 !important;
+}
+.veritread-estimator input[type=submit],
+.vt-get-estimate-button,
+.vt-list-shipment-button
+{
+  border-radius: 2px;
+  box-shadow: rgba(255, 255, 255, 0.498039) 0px 1px 0px 0px inset;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 6px 18px;
+  margin: 0 !important;
+  text-align: center !important;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 0;
+  width: 225px;
+}
+.vt-get-estimate-button {
+  background-color: #fcc60d !important;
+  font-size: 13px !important;
+  font-weight: bold;
+  height: auto !important;
+  text-shadow: none !important;
+  width: auto;
+}
+
+.veritread-estimator .vt-get-estimate
+{
+  margin-left: 50%;
+  padding-top: 18px;
+  text-align: left;
+}
+.veritread-estimator .vt-col1 .vt-get-estimate
+{
+  float: right;
+  margin-left: auto;
+  padding-top: 0;
+  width: 26%;
+}
+.veritread-estimator .vt-col1 .vt-get-estimate input[type=submit]
+{
+  text-shadow: none !important;
+}
+
+.veritread-estimator .vt-get-estimate input[type=submit],
+.vt-list-shipment-button
+{
+  width: 100% !important;
+}
+
+
+.veritread-estimator .vt-goodtobad
+{
+  height: 78px;
+  margin-left: 0;
+  padding: 0;
+  position: relative;
+}
+
+.veritread-estimator .vt-goodtobad .vt-grad
+{
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: 24px;
+  height: 24px;
+}
+
+.veritread-estimator .vt-goodtobad h5
+{
+  margin: 0;
+  position: absolute;
+  z-index: 199;
+}
+
+.veritread-estimator .vt-goodtobad .vt-gradfull
+{
+    background: #003100; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: #ff0000; /* Old browsers */
+background: -moz-linear-gradient(left,  #ff0000 0%, #f9f261 40%, #fce728 65%, #00c100 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff0000), color-stop(40%,#f9f261), color-stop(65%,#fce728), color-stop(100%,#00c100)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #ff0000 0%,#f9f261 40%,#fce728 65%,#00c100 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #ff0000 0%,#f9f261 40%,#fce728 65%,#00c100 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #ff0000 0%,#f9f261 40%,#fce728 65%,#00c100 100%); /* IE10+ */
+background: linear-gradient(to right,  #ff0000 0%,#f9f261 40%,#fce728 65%,#00c100 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#00c100',GradientType=1 ); /* IE6-9 */
+
+}
+
+.veritread-estimator .vt-goodtobad .vt-grad1
+{
+    height: 18px;
+    width: 50%;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ffff63', GradientType=0 ); /* IE6-8 */
+}
+
+.veritread-estimator .vt-goodtobad .vt-grad2
+{
+    height: 18px;
+    width: 50%;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffff63', endColorstr='#00c100', GradientType=0 ); /* IE6-8 */
+}
+
+.veritread-estimator .vt-goodtobad .vt-high
+{
+    margin-left: 0;
+}
+.veritread-estimator .vt-goodtobad .vt-high h5
+{
+    color: #fff;
+    font-size: 13px;
+    margin-top: 0;
+    right: 6px;
+    top: 30px;
+}
+
+.veritread-estimator .vt-goodtobad .vt-low
+{
+    margin-left: 0;
+}
+.veritread-estimator .vt-goodtobad .vt-low h5 {
+    color: #fff;
+    font-size: 13px;
+    left: 6px;
+    top: 30px;
+}
+
+.veritread-estimator .vt-scale
+{
+    left: 70px;
+    position: absolute;
+}
+
+.veritread-estimator .vt-high h5, .veritread-estimator .vt-low h5
+{
+  font-size: 14px;
+}
+
+.veritread-estimator .vt-subheader.vt-pointer-highest
+{
+  left: 85%;
+}
+
+.veritread-estimator .vt-subheader.vt-pointer-higher
+{
+  left: 60%;
+}
+
+.veritread-estimator .vt-subheader.vt-pointer-lower
+{
+  left: 31%;
+}
+
+.veritread-estimator .vt-subheader.vt-pointer-lowest
+{
+  left: 0;
+}
+
+.veritread-estimator .vt-average-pointer,
+.veritread-estimator .vt-average-pointer-mobile
+{
+  height: 40px;
+  width: 30px;
+  background: url('http://img.resaleweekly.com/skin/frontend/default/corolla_live_0.2/images/veritread/estimator-pointer-vert.png') no-repeat;
+  position: absolute;
+  margin-top: 0;
+  left: 50%;
+  top: 20px;
+  line-height: 0;
+  z-index: 3;
+}
+.veritread-estimator .vt-average-pointer-mobile {
+    display: none;
+}
+
+.veritread-estimator .vt-subheader
+{
+  -webkit-font-smoothing: antialiased;
+  color: #6f6f6f;
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  height: 0px;
+  line-height: 22px;
+  margin: 14px 0 17px;
+  padding: 0px;
+  position: absolute;
+  text-rendering: optimizelegibility;
+  top: 52px;
+  width: 40px;
+}
+
+
+.veritread-estimator .vt-hide,
+.veritread-estimator .vt-type input.vt-hide
+{
+  display: none;
+}
+
+.veritread-estimator .vt-updating 
+{
+  background: #ffffff url( 'http://img.resaleweekly.com/skin/frontend/default/corolla_live_0.2/images/veritread/preloader.gif' ) no-repeat 50%;
+  background-color:rgba(255, 255, 255, 0.85);
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 100000000;
+}
+.veritread-estimator .vt-updating h3
+{
+  position: relative;
+  margin-top: -35px;
+  top: 50%;
+}
+
+.veritread-estimator .vt-estimate-cost-and-distance
+{
+  -webkit-font-smoothing: antialiased;
+  background-color: #FDC70F;
+  box-sizing: border-box;
+  color: #222;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0;
+  text-align: center;
+}
+
+.veritread-estimator .vt-heading
+{
+  -webkit-font-smoothing: antialiased;
+  background-color: #444;
+  box-sizing: border-box;
+  color: #eee;
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  height: 38px;
+  margin: 0 0 12px;
+  padding: 12px 0 8px 0;
+  text-align: center;
+}
+.veritread-estimator .vt-heading .vt-logo {
+    margin-top: -3px;
+    vertical-align: middle;
+}
+.vt-col2 .vt-heading .vt-logo {
+  display:none;
+}
+
+.veritread-estimator .vt-estimate-cost-and-distance h1
+{
+  margin: 14px 0 14px 0;
+  text-align: center;
+}
+.veritread-estimator .vt-estimate-price {
+    font-size: 30px;
+}
+.veritread-estimator .vt-estimate-currency {
+    font-size: 22px;
+    vertical-align: super;
+}  
+.veritread-estimator .vt-timeframe-container,
+.veritread-estimator .vt-estimate-distance-container {
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.veritread-estimator button,
+.veritread-estimator a.vt-button
+{
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #1d1d1d;
+  font-family:  'Gotham SSm A', 'Gotham SSm B', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  margin: 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.veritread-estimator button:hover,
+.veritread-estimator a.vt-button:hover
+{
+  background-color: #d0d0d0;
+}
+
+.veritread-estimator .vt-post-link
+{
+  padding-top: 8px;
+}
+.vt-estimator-results-link.vt-post-link {
+    padding-bottom: 22px;
+}
+.veritread-estimator .vt-post-link a.vt-button
+{
+  background: #080; /* Old browsers */
+  background: -moz-linear-gradient(top,  #52b152 1%, #008a00 54%, #005700 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#52b152), color-stop(54%,#008a00), color-stop(100%,#005700)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #52b152 1%,#008a00 54%,#005700 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #52b152 1%,#008a00 54%,#005700 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #52b152 1%,#008a00 54%,#005700 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #52b152 1%,#008a00 54%,#005700 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b152', endColorstr='#005700',GradientType=0 ); /* IE6-9 */
+  
+  border: 1px solid #030;
+  color: #fff;
+  padding: 6px 12px;
+}
+.veritread-estimator .vt-post-link a.vt-button:hover
+{
+  background: #b4ddb4; /* Old browsers */
+  background: -moz-linear-gradient(top,  #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(17%,#83c783), color-stop(33%,#52b152), color-stop(67%,#008a00), color-stop(83%,#005700), color-stop(100%,#002400)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+}
+
+.veritread-estimator .vt-postal-code-lookup
+{
+  float: right;
+  
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  background-color: #ddd;
+  color: #333;
+  font-size: 0.7em;
+  font-weight: normal;
+  padding: 3px 6px;
+  text-decoration: none;
+}
+.veritread-estimator .vt-postal-code-lookup:hover
+{
+  background-color: #eee;
+  border-color: #ccc;
+}
+
+.veritread-estimator .vt-specs section.vt-unit-converter {
+  clear: both;
+  font-weight: bold;
+  text-align: right;
+}
+.veritread-estimator .vt-type input.vt-specs-field
+{
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0 2px;
+  text-align: center;
+  width: 40px;
+}
+.veritread-estimator .vt-type input.vt-specs-field.vt-metric
+{
+  width: 80px;
+}
+.veritread-estimator .vt-type input.vt-weight-field
+{
+  width: 94px;
+}
+.veritread-estimator label.vt-units
+{
+  font-size: 12px;
+  padding: 0 6px 0 0;
+}
+
+.veritread-estimator .vt-disclaimer
+{
+  color: #000;
+  background-color: #cdcdcd;
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  line-height: 12px;
+  padding: 6px;
+  text-align: center;
+}
+
+.veritread-estimator .vt-schematic-table {
+  width: 100%;
+}
+.vt-schematic-cell {
+  vertical-align: top;
+}
+.vt-dimensions-cell {
+  width: 230px;
+}
+
+.veritread-estimator .vt-schematic
+{
+  margin: 0 auto;
+  padding-top: 2px;
+  padding-left: 2px;
+
+}
+.veritread-estimator .vt-schematic img {
+  max-width: 100%;
+}
+
+.vt-key-local, .vt-key-vt, .vt-dim-key { 
+  background-image: url('http://img.resaleweekly.com/skin/frontend/default/corolla_live_0.2/images/veritread/vt-dimensions.png');
+  background-repeat: no-repeat;
+  float: left;
+  margin-top: 3px;
+  width: 5px;
+  height: 5px;
+}
+.vt-key-local, .vt-key-vt {
+  margin-right: 6px;
+}
+.vt-dim-key {
+  float: right;
+  background-position: -200px -200px;
+}
+.veritread-estimator .vt-specs .vt-label.vt-dim-attwidth .vt-dim-key,
+.veritread-estimator .vt-specs .vt-label.vt-dim-angattwidth .vt-dim-key {
+  margin-top: 9px;
+}
+.vt-key-local, .vt-dim-local .vt-dim-key { background-position: top right; }
+.vt-key-vt, .vt-dim-vt .vt-dim-key { background-position: top left; }
+
+.vt-dimensions-keys, .vt-default-disclaimer {
+  padding-top: 12px;
+}
+.vt-dimensions-key, .vt-default-disclaimer {
+  display: block;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 11px;
+  margin-left: 12px;
+  padding-bottom: 6px;
+  text-align: left;
+}
+
+.veritread-estimator .vt-schematic-container {
+  float: left;
+  margin-right: 230px;
+}
+.veritread-estimator .vt-dimensions {
+/*   float: right;
+  width: 230px; */
+}
+.veritread-estimator .vt-dimensions-inner {
+}
+
+.veritread-estimator button.vt-close
+{
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent 0 0 !important;
+  border: 0;
+  margin-left: 5px;
+  width: auto !important;
+  height: auto !important;
+}
+
+.veritread-estimator .vt-close
+{
+  display: none;
+  
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 0 #AA100D;
+  filter: alpha(opacity=90);
+  opacity: .9;
+}
+
+.veritread-estimator .vt-alert
+{
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 15px;
+  text-align: left !important;
+}
+
+.veritread-estimator .vt-alert-error
+{
+  background-color: #FDC70F;
+  border-color: #333;
+  color: #333;
+  margin-bottom: 6px;
+  margin-right: 6px;
+}
+.veritread-estimator .vt-alert-error a
+{
+  color: #fff;
+}
+.veritread-estimator .vt-alert .vt-alert-heading {
+  font-weight: bold;
+  margin-top: 0;
+}
+.veritread-estimator .vt-alert .vt-alert-heading,
+.veritread-estimator .vt-alert .vt-alert-contents {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.vt-error-1, .vt-error-2 {
+  line-height: 18px;
+}
+
+.vt-no-estimate-error {
+  float: left;
+  width: 45%;
+}
+.vt-col1 .vt-no-estimate-error {
+  float: none;
+  width: 100%;
+}
+
+.veritread-estimator #vtErrorMsg
+{
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.veritread-estimator a.vt-button.vt-postal-lookup
+{
+  float: right;
+  height: 18px;
+  margin-top: -2px;
+  padding: 0 6px;
+  text-shadow: none;
+  width: auto;
+}
+
+.veritread-estimator .vt-city-province-label,
+.veritread-estimator .vt-postal-code-label
+{
+  color: #ffff99;
+}
+
+.vt-cta {
+  background-color: #3a3a3a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 3px 6px 2px 6px;
+}
+.vt-cta-num {
+    background-color: #fff;
+    color: #3a3a3a;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    vertical-align: text-bottom;
+}
+
+.vt-alternate-listing {
+    padding-top: 36px;
+    text-align: left;
+}
+.vt-alternate-listing p {
+    color: #333;
+}
+button.vt-list-shipment-button {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.vt-load-advisor {
+  float: left;
+  width: 45%;
+}
+.vt-bullets {
+  margin-left: 24px;
+  padding-left: 0;
+}
+.vt-bullet {
+  font-size: 16px;
+  line-height: 18px;
+  list-style-image: url('http://img.resaleweekly.com/skin/frontend/default/corolla_live_0.2/images/veritread/vt-bullet.png');
+}
+
+.vt-ironplanet-disclaimer {
+  background-color: #ececec;
+  border: 1px solid #c3c3c3;
+  margin-left: 50%;
+  margin-bottom: 6px;
+}
+.vt-ironplanet-disclaimer .vt-disclaimer {
+  color: #444;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 6px;
+  padding: 0;
+}
+
+.vt-header-img {
+  max-width: 100%;
+}
+.vt-enter-delivery-location {
+  color: #1271b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+.vt-enter-delivery-location:hover {
+  color: #00f;
+  text-decoration: underline;
+}
+
+.vt-estimate-slider {
+  margin-bottom: 6px;
+}
+.vt-results {
+  float: right;
+  width: 50%;
+}
+
+.vt-bad-lookup {
+  background-color: #efefef;
+  margin-top: 12px;
+  padding: 18px 0 6px 0;
+  text-align: center;
+}
+
+
+.vt-mobile-show {
+    display: none;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 520px) {
+    .veritread-main,
+    .veritread-estimator .vt-specs-and-inputs,
+    .veritread-estimator .vt-dimensions,
+    .veritread-estimator .vt-schematic-container,
+    .vt-col2 {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .veritread-main {
+        left: 0;
+    }
+    .veritread-estimator .vt-schematic,
+    .veritread-estimator .vt-schematic img {
+        float: none;
+        max-width: 100%;
+    }
+    .vt-schematic-cell {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+    .vt-dimensions-cell {
+      display: block;
+      width: 100%;
+    }
+    
+    .veritread-estimator .vt-specs section.vt-unit-converter {
+        text-align: center;
+    }
+    .veritread-estimator .vt-location-ui {
+      padding-left: 12px;
+      padding-top: 12px;
+    }
+    .vt-pickup-location-ui,
+    .vt-delivery-location-ui,
+    .veritread-estimator .vt-get-estimate {
+        float: none;
+        margin-left: 0;
+        width: auto;
+    }
+    .vt-delivery-location-ui {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .veritread-estimator .vt-estimate-cost-and-distance {
+        margin-top: 12px;
+        text-align: center;
+    }
+    .veritread-estimator .vt-estimate-cost-and-distance h1,
+    .veritread-estimator .vt-timeframe-container, .veritread-estimator .vt-estimate-distance-container,
+    .veritread-estimator .vt-estimate-cost-and-distance {
+        margin-left: 0;
+        text-align: center;
+    }
+    .vt-about {
+        padding-top: 8px;
+    }
+    .vt-results,
+    .vt-load-advisor,
+    .vt-no-estimate-error {
+      float: none;
+      width: 100%;
+    }
+    .vt-estimator-results {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+    
+    .vtfooter.vt-footer-1 .vt-footer-col1,
+    .vtfooter.vt-footer-1 .vt-footer-col2 {
+      float: none;
+      margin: 0;
+      width: 100%;
+    }
+    .vtfooter.vt-footer-1 .vt-footer-col1 {
+      padding-bottom: 12px;
+    }
+    
+
+    .vt-footer-2 .vtfooter-info {
+        width: 100%;
+    }
+    .vt-footer-2 .vtfooter-info .vtfooter-text,
+    .vt-footer-2 .vtfooter-info .vtfooter-contact {
+        display: block;
+        float: left;
+        width: 100% !important;
+    }
+    .vt-footer-2 .vtfooter-text .line2 {
+        display: inline;
+    }
+
+
+    .veritread-estimator .vt-subheader.vt-pointer-higher,
+    .veritread-estimator .vt-subheader.vt-pointer-lower {
+      display:none;
+    }
+
+    .vt-mobile-hide {
+      display: none;
+    }
+    .vt-mobile-show {
+        display: block;
+    }    
+}
+
