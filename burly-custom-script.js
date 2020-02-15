@@ -1,5 +1,5 @@
 $(document).ready(function(){
-        $("#hero__hero__0__search-form button").text("Explore Marketplace");
+        $("#hero__hero__0__search-form button").text("Search Equipment");
         if($("label[for='delivery_shipping']").length){
             $("label[for='delivery_shipping']").text($("label[for='delivery_shipping']").text().replace('Shipping', 'Delivery'));
         }
