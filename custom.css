@@ -1321,4 +1321,10 @@
 
     .home-no-listings{border-radius: 10px;}
     
-    
+    @media (min-width: 767px){
+            #video__How-Burly-helps-equipment-renters__3,
+            #video__How-Burly-helps-equipment-owners__4{
+                display: inline-block;
+                width: 49%;
+            }
+        }
