@@ -481,10 +481,10 @@ $(document).ready(function(){
     }
 
     if( $("#video__How-Burly-helps-equipment-renters__3").length){
-        $("#video__How-Burly-helps-equipment-renters__3").prepend("<p class='video-header-landing-page'>For Equipment Renters</p>");
+        $("#video__How-Burly-helps-equipment-renters__3").prepend('<h1 class="info__title--multi-column video-header-landing-page">For Equipment Renters</h1>');
     }
     
     if($("#video__How-Burly-helps-equipment-owners__4").length){
-        $("#video__How-Burly-helps-equipment-owners__4").prepend("<p class='video-header-landing-page'>For Equipment Owners</p>");
+        $("#video__How-Burly-helps-equipment-owners__4").prepend('<h1 class="info__title--multi-column video-header-landing-page">For Equipment Owners</h1>');
     }
 });
