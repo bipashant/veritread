@@ -491,4 +491,12 @@ $(document).ready(function(){
     $("#topbar-container a").each(function(){
        this.removeAttribute("target");
     });
+
+    $("#topbar-placeholder a").each(function(){
+       this.removeAttribute("target");
+    });
+
+    $(".OffScreenMenu a").each(function(){
+       this.removeAttribute("target");
+    });
 });
