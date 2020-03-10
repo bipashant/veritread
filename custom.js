@@ -487,4 +487,8 @@ $(document).ready(function(){
     if($("#video__How-Burly-helps-equipment-owners__4").length){
         $("#video__How-Burly-helps-equipment-owners__4").prepend('<h1 class="info__title--multi-column video-header-landing-page">For Equipment Owners</h1>');
     }
+    
+    $("#topbar-container a").each(function(){
+       this.removeAttribute("target");
+    });
 });
