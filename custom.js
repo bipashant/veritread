@@ -488,15 +488,17 @@ $(document).ready(function(){
         $("#video__How-Burly-helps-equipment-owners__4").prepend('<h1 class="info__title--multi-column video-header-landing-page">For Equipment Owners</h1>');
     }
     
-    $("#topbar-container a").each(function(){
-       this.removeAttribute("target");
-    });
+     setTimeout(function(){
+        $("#topbar-container a").each(function(){
+            this.removeAttribute("target");
+        });
 
-    $("#topbar-placeholder a").each(function(){
-       this.removeAttribute("target");
-    });
+        $("#topbar-placeholder a").each(function(){
+            this.removeAttribute("target");
+        });
 
-    $(".OffScreenMenu a").each(function(){
-       this.removeAttribute("target");
-    });
+        $(".OffScreenMenu a").each(function(){
+            this.removeAttribute("target");
+        });
+    }, 1000)
 });
